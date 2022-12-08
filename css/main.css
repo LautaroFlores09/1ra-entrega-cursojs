@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: Oswald;
+  src: url("/assets/ttf/Oswald-Light.ttf");
+  font-style: light; }
+
+@font-face {
+  font-family: bebasneue;
+  src: url("/assets/ttf/BebasNeue-Regular.ttf"); }
+
+header .navmenu {
+  background-color: #442811; }
+  header .navmenu__menu img {
+    width: 200px;
+    margin-right: 80px; }
+  header .navmenu__menu div ul {
+    font-family: "Oswald", light;
+    font-size: 23px; }
+    header .navmenu__menu div ul li {
+      margin-left: 50px; }
+      header .navmenu__menu div ul li a {
+        color: white;
+        text-shadow: 2px 2px black;
+        letter-spacing: 3px; }
+        header .navmenu__menu div ul li a:hover {
+          color: #fc7200;
+          text-shadow: none; }
+
+body .hero {
+  background-image: url("/assets/img/mainbackground.jpg");
+  height: 1080px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  body .hero header nav {
+    background-color: transparent; }
+    body .hero header nav .mainmenu img {
+      width: 200px;
+      margin-right: 80px; }
+    body .hero header nav .mainmenu div ul {
+      font-family: "Oswald", light;
+      font-size: 23px; }
+      body .hero header nav .mainmenu div ul li {
+        margin-left: 50px; }
+        body .hero header nav .mainmenu div ul li a {
+          color: white;
+          text-shadow: 2px 2px black;
+          letter-spacing: 3px; }
+          body .hero header nav .mainmenu div ul li a:hover {
+            color: #fc7200;
+            text-shadow: none; }
+  body .hero .pricipal .maintitulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center center;
+    align-items: center center;
+    margin-top: 300px; }
+    body .hero .pricipal .maintitulos h1 {
+      text-align: center;
+      font-family: "bebasneue", medium;
+      color: white;
+      font-size: 70px;
+      letter-spacing: 7px;
+      text-shadow: 5px 5px black; }
+    body .hero .pricipal .maintitulos h4 {
+      text-align: center;
+      font-family: "Oswald", light;
+      color: white; }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  body .hero .pricipal .maintitulos h1 {
+    font-size: 50px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body .hero .pricipal .maintitulos h1 {
+    font-size: 50px; }
+  body .hero .pricipal .maintitulos h4 {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body .hero .pricipal .maintitulos h1 {
+    font-size: 30px; }
+  body .hero .pricipal .maintitulos h4 {
+    font-size: 15px; } }
+
+.menu {
+  background-color: #442811;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, auto);
+  padding: 50px; }
+  .menu .card_menu {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    margin: 30px;
+    box-shadow: #fc7200 10px 8px 3px; }
+    .menu .card_menu img {
+      height: 200px;
+      margin: 30px; }
+    .menu .card_menu div {
+      display: flex;
+      flex-direction: column;
+      height: auto; }
+      .menu .card_menu div h3 {
+        color: #fc7200;
+        font-family: "bebasneue", medium;
+        font-size: 35px; }
+      .menu .card_menu div p {
+        color: #442811;
+        font-family: "Oswald", light;
+        font-size: 20px;
+        margin-bottom: 20px; }
+      .menu .card_menu div h4 {
+        color: #fc7200;
+        font-family: "bebasneue", medium;
+        font-size: 35px; }
+
+@media only screen and (min-width: 992px) and (max-width: 1550px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .menu .card_menu {
+      justify-content: center; } }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .menu .card_menu {
+      width: 400px; }
+      .menu .card_menu img {
+        height: 100px;
+        margin: 10px; }
+      .menu .card_menu div h3 {
+        font-size: 20px; }
+      .menu .card_menu div p {
+        font-size: 15px;
+        margin-bottom: 10px; }
+      .menu .card_menu div h4 {
+        font-size: 20px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0; }
+    .menu .card_menu {
+      width: 400px;
+      margin: 30px 30px 30px 0; }
+      .menu .card_menu img {
+        height: 100px;
+        margin: 10px; }
+      .menu .card_menu div h3 {
+        font-size: 20px; }
+      .menu .card_menu div p {
+        font-size: 15px;
+        margin-bottom: 10px; }
+      .menu .card_menu div h4 {
+        font-size: 20px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0; }
+    .menu .card_menu {
+      width: 250px;
+      margin: 30px 30px 30px 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 400px; }
+      .menu .card_menu img {
+        height: 100px;
+        margin: 10px; }
+      .menu .card_menu div h3 {
+        font-size: 20px;
+        text-align: center; }
+      .menu .card_menu div p {
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-align: center; }
+      .menu .card_menu div h4 {
+        font-size: 20px;
+        text-align: center; } }
+
+.mainnosotros .nosotros {
+  display: flex;
+  background-color: #442811;
+  background-image: url("/assets/img/backgroundnosotros.png");
+  padding: 50px 200px 50px 200px; }
+  .mainnosotros .nosotros .content {
+    display: flex;
+    flex-direction: column; }
+    .mainnosotros .nosotros .content .content__since h2 {
+      font-family: "bebasneue", medium;
+      color: #fc7200;
+      font-size: 55px; }
+    .mainnosotros .nosotros .content .content__since p {
+      font-family: "Oswald", light;
+      color: white;
+      line-height: 50px;
+      margin-bottom: 80px; }
+    .mainnosotros .nosotros .content h2 {
+      font-family: "bebasneue", medium;
+      color: #fc7200;
+      font-size: 55px; }
+    .mainnosotros .nosotros .content .content__cartitasnosotros {
+      display: flex;
+      justify-content: flex-start; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .cocineros {
+        margin-right: 100px; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card {
+        display: flex;
+        width: 500px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card img {
+          width: 200px;
+          margin-right: 20px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card h4 {
+          font-family: "bebasneue", medium;
+          color: #fc7200;
+          font-size: 30px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card p {
+          font-family: "Oswald", light;
+          color: white;
+          line-height: 30px; }
+
+@media only screen and (min-width: 992px) and (max-width: 1350px) {
+  .mainnosotros .nosotros {
+    padding: 0; }
+    .mainnosotros .nosotros .content .content__since h2 {
+      text-align: center; }
+    .mainnosotros .nosotros .content .content__since p {
+      padding: 10px 200px 20px 200px; }
+    .mainnosotros .nosotros .content h2 {
+      text-align: center; }
+    .mainnosotros .nosotros .content .content__cartitasnosotros {
+      justify-content: center; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card {
+        align-items: center;
+        flex-direction: column;
+        width: 400px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card h4 {
+          text-align: center; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card p {
+          text-align: center; } }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .mainnosotros .nosotros {
+    padding: 50px 100px 50px 100px; }
+    .mainnosotros .nosotros .content h2 {
+      text-align: center; }
+    .mainnosotros .nosotros .content .content__cartitasnosotros {
+      flex-direction: column;
+      align-items: center; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .cocineros {
+        margin: 0; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card {
+        align-items: center;
+        flex-direction: column;
+        width: 400px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card h4 {
+          text-align: center; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card p {
+          text-align: center; } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .mainnosotros .nosotros {
+    padding: 50px; }
+    .mainnosotros .nosotros .content h2 {
+      text-align: center; }
+    .mainnosotros .nosotros .content .content__cartitasnosotros {
+      flex-direction: column;
+      align-items: center; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .cocineros {
+        margin: 0; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card {
+        align-items: center;
+        flex-direction: column;
+        width: 400px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card img {
+          width: 100px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card h4 {
+          text-align: center; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card p {
+          text-align: center; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainnosotros .nosotros {
+    padding: 20px 5px 20px 5px; }
+    .mainnosotros .nosotros .content .content__since h2 {
+      text-align: center;
+      font-size: 40px; }
+    .mainnosotros .nosotros .content .content__since p {
+      font-size: 12px;
+      line-height: 30px; }
+    .mainnosotros .nosotros .content h2 {
+      text-align: center;
+      font-size: 40px; }
+    .mainnosotros .nosotros .content .content__cartitasnosotros {
+      flex-direction: column;
+      align-items: center; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .cocineros {
+        margin: 0; }
+      .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card {
+        align-items: center;
+        flex-direction: column;
+        width: 300px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card img {
+          width: 100px; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card h4 {
+          text-align: center; }
+        .mainnosotros .nosotros .content .content__cartitasnosotros .content__cartitasnosotros-card p {
+          text-align: center;
+          font-size: 12px; } }
+
+.tupedido {
+  display: flex;
+  padding: 24px;
+  background-color: #442811;
+  justify-content: space-around; }
+  .tupedido .redessociales {
+    display: flex;
+    flex-direction: column; }
+    .tupedido .redessociales h2 {
+      font-family: "bebasneue", medium;
+      color: #fc7200;
+      letter-spacing: 5px; }
+    .tupedido .redessociales .redessociales__contacto {
+      display: flex; }
+      .tupedido .redessociales .redessociales__contacto .redessociales__contacto-container {
+        margin-right: 50px; }
+        .tupedido .redessociales .redessociales__contacto .redessociales__contacto-container .redessociales__contacto-container-icons {
+          display: flex;
+          align-items: center;
+          margin-top: 30px; }
+          .tupedido .redessociales .redessociales__contacto .redessociales__contacto-container .redessociales__contacto-container-icons .bi {
+            background-color: #fc7200;
+            color: white;
+            padding: 20px;
+            border-radius: 1000px; }
+          .tupedido .redessociales .redessociales__contacto .redessociales__contacto-container .redessociales__contacto-container-icons h3 {
+            margin-left: 10px;
+            font-family: "Oswald", light;
+            color: white; }
+  .tupedido .local h2 {
+    font-family: "bebasneue", medium;
+    color: #fc7200;
+    letter-spacing: 5px; }
+  .tupedido .local p {
+    margin-left: 10px;
+    font-family: "Oswald", light;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px; }
+  .tupedido .local iframe {
+    height: 500px;
+    width: 500px; }
+
+footer {
+  background-color: #fc7200;
+  padding: 30px; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer div img {
+      width: 200px; }
+    footer div .iconsfooter {
+      display: inline;
+      margin-bottom: 10px; }
+      footer div .iconsfooter .bi {
+        color: #442811; }

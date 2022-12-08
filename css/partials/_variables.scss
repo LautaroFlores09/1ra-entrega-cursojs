@@ -1,0 +1,21 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+@font-face{
+     font-family: Oswald;
+     src: url("/assets/ttf/Oswald-Light.ttf");
+     font-style: light;
+}
+@font-face {
+     font-family:bebasneue ;
+     src: url("/assets/ttf/BebasNeue-Regular.ttf");
+}
+// colors
+$backgroundcolor:#442811;
+$titles:#fc7200;
+$color3:white;
+// tipografias
+$tipotxt:"Oswald", light;
+$tipotitle:"bebasneue", medium;
