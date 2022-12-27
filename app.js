@@ -17,51 +17,26 @@ function stringMenu(){
      let finalizarPedido="111 Finalizar pedido"
      let menuStr=""
      for (let i = 0; i < menuObj.length; i++) {
-          menuStr=menuStr +"0"+ i +" "+ menuObj[i].nombre +" $"+menuObj[i].precio + "\n"
+          menuStr=menuStr + i +" "+ menuObj[i].nombre +" $"+menuObj[i].precio + "\n"
      }
      return bd + menuStr + mostrarTotal + finalizarPedido  
 }
 
 let menuPrompt=stringMenu()
 
-let total1=0;
-let total2=0;
-let total3=0;
-let total4=0;
+let totalFinal= 0;
 let ingreso=prompt("Ingresa 1 para entrar al menu \nIngresa cualquier caracter para salir ")
 if (ingreso=1){
      let menu= prompt(menuPrompt)
      while (menu != 111){
-          
-          switch (menu) {
-               case "00":
-                    let cantidad1 = parseInt(prompt("Cuanta cantidad desea?"));
-                    total1=menuObj[0].precio*cantidad1;
-                    break;
-               case "01":
-                    let cantidad2 = parseInt(prompt("Cuanta cantidad desea?"));
-                    total2=menuObj[1].precio*cantidad2;
-                    break;
-               case "02":
-                    let cantidad3 = parseInt(prompt("Cuanta cantidad desea?"));
-                    total3=menuObj[2].precio*cantidad3;
-                    break;
-               case "03":
-                    let cantidad4 = parseInt(prompt("Cuanta cantidad desea?"));
-                    total4=menuObj[3].precio*cantidad4;
-                    break;
-               case "999":
-                    let totalFinal= total1+ total2 + total3 + total4;
-                    alert(totalFinal);
-                    break;
-          
-               default:
-                    break;
+          if (menu==999){
+               alert(totalFinal);
+          }else{
+               let cantidad1 = parseInt(prompt("Cuanta cantidad desea?"));
+               totalFinal=totalFinal+cantidad1*menuArr[menu][1]
           }
-          
           menu= prompt(menuPrompt)
      }
-
 }
 
 
